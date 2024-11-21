@@ -5,7 +5,6 @@ export const LANGUAGES = ["de", "fr", "en"] as const;
 export const LOCALES = ["de-ch", "fr-ch", "en-ch"] as const;
 
 export type Locale = "de-ch" | "fr-ch" | "en-ch";
-export type Country = "ch";
 export type Language = (typeof LANGUAGES)[number];
 
 export const routing = defineRouting({

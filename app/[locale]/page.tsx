@@ -1,4 +1,5 @@
 import { Button } from "@/app/[locale]/button";
+import { LocaleSwitcher } from "@/app/[locale]/localeSwitcher.client";
 import { Link } from "@/i18n/routing";
 import { getTranslations, setRequestLocale } from "next-intl/server";
 
@@ -24,12 +25,18 @@ export default async function Page({
       <br />
       <Link href="/somePage">Go to some page</Link>
       <br />
+      Server Component:
+      <br />
       <Link href="/" locale="de-ch">
         DE
       </Link>
       <Link href="/" locale="fr-ch">
         FR
       </Link>
+      <br />
+      Client Component:
+      <br />
+      <LocaleSwitcher />
     </>
   );
 }

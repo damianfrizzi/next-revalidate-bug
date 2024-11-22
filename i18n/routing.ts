@@ -25,7 +25,7 @@ export const routing = defineRouting({
     //     locales: ['de-de'],
     // },
     {
-      domain: process.env.NEXT_PUBLIC_VERCEL_ENV ?? "localhost:3000",
+      domain: process.env.NEXT_PUBLIC_VERCEL_URL ?? "localhost:3000",
       defaultLocale: "de-ch",
       locales: ["de-ch", "fr-ch"],
     },

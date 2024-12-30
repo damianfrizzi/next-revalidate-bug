@@ -18,6 +18,12 @@ export const routing = defineRouting({
     },
   },
   alternateLinks: false,
+  pathnames: {
+    "/blog/hallo-welt/": {
+      "de-ch": "/blog/hallo-welt/",
+      "fr-ch": "/fr/blog/bonjour-le-monde/",
+    },
+  },
   domains: [
     // {
     //     domain: '...',

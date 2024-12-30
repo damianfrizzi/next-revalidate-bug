@@ -22,6 +22,10 @@ const Blog = async ({
   return (
     <>
       <h1>{blogPost.title}</h1>
+      {Math.floor(Math.random() * 1000)}
+      <br />
+      {new Date().toISOString()}
+      <br />
       <br />
       Server Component:
       <br />
